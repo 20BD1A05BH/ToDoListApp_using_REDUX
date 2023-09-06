@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import AddTodo from "./Components/AddTodo";
+import Adduser from "./Components/Adduser";
+import Heading from "./Components/Heading";
+import TodoCount from "./Components/TodoCount";
+import TodoList from "./Components/TodoList";
+import Userslist from "./Components/Userslist";
+// import { useState } from "react";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container text-center mt-5">
+      {/* row 1 */}
+      <div className="row">
+      <div className="text-center"><Heading /></div>
+        <div className="col-sm-6"><Adduser /></div>
+        <div className="col-sm-6"><Userslist /></div>
+      </div>
+      {/* row 2 */}
+      <div className="row mt-5">
+        
+        <div className="col-sm-4"><AddTodo /></div>
+        <div className="col-sm-4"><TodoList /></div>
+        <div className="col-sm-4"><TodoCount /></div>
+      </div>
     </div>
   );
 }

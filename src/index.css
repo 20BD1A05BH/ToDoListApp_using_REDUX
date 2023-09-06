@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.headings{
+  font-family: 'Anton', sans-serif;
+}
+.list-item1{
+  font-family: 'Oswald', sans-serif;
+}
+.mainheading{
+  font-family: 'Lobster', cursive;
+}
